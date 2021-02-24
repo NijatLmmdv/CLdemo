@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Champions League</title>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+        
+        body,
+        html {
+            background-image: url('https://www.underconsideration.com/brandnew/archives/uefa_champions_league_starball_02.jpg');
+            background-size: cover;
+            background-color: #0000c7;
+        }
+        
+        .cl1 {
+            color: white;
+            font-size: 70px;
+            text-align: center;
+            padding-top: 0px;
+        }
+        
+        .bt {
+            background-color: white;
+            color: #0000f3;
+            float: left;
+            border: 2px black;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 20px;
+            font-weight: bold;
+            width: 25%;
+        }
+        
+        .bt:hover {
+            background-color: turquoise;
+        }
+        
+        .btdwn {
+            color: white;
+            display: none;
+            padding: 100px 20px;
+            height: 1750px;
+            text-align: center;
+        }
+        
+        .btgb {
+            float: right;
+            border-radius: 15px;
+            color: red;
+        }
+        
+        #Groups {
+            background-color: #007d99;
+        }
+        
+        #Final {
+            background-color: #0092ba;
+        }
+        
+        #Hospitality {
+            background-color: #007cd8;
+        }
+        
+        #About {
+            background-color: #00c4fa;
+        }
+        
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            border: 1px solid black;
+            text-align: left;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        tr {
+            background-color: turquoise;
+        }
+        
+        .groupa,
+        .groupb,
+        .groupc,
+        .groupd,
+        .groupe,
+        .groupf,
+        .groupg,
+        .grouph {
+            display: none;
+        }
+        
+        .bt {
+            float: right;
+            padding: 10px;
+        }
+        
+        .cl {
+            border-left: 3px solid blue;
+        }
+        
+        .el {
+            border-left: 3px solid green;
+        }
+        
+        .ls {
+            border-left: 3px solid red;
+        }
+        
+        .sbm {
+            margin-left: 70px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="cl1">Champions League</div>
+    <br>
+
+
+
+
+    <div>
+
+
+
+
+        <button class="bt" onclick="openPage('About', this, '')">About</button>
+        <button class="bt" onclick="openPage('Hospitality', this, '')">Hospitality</button>
+        <button class="bt" onclick="openPage('Final', this, '')">Final Stage</button>
+        <button class="bt" onclick="openPage('Groups', this, '')">Groups</button>
+
+
+
+
+    </div>
+
+
+
+
+    <div id="Groups" class="btdwn ">
+
+        <div class="grpsall">
+            <h2>Groups:</h2>
+            <p>Group A</p>
+
+            <table>
+
+                <tr>
+                    <th>Clubs</th>
+                    <th>P</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>For</th>
+                    <th>AG</th>
+                    <th>Av</th>
+                    <th>Pt</th>
+                </tr>
+
+
+                <tr>
+                    <th class="cl">PSG</th>
+                    <th>6</th>
+                    <th>5</th>
+                    <th>1</th>
+                    <th>0</th>
+                    <th>17</th>
+                    <th>2</th>
+                    <th>15</th>
+                    <th>16</th>
+
+                </tr>
+                <tr>
+                    <th class="cl">Real Madrid</th>
+                    <th>6</th>
+                    <th>3</th>
+                    <th>2</th>
+                    <th>1</th>
+                    <th>14</th>
+                    <th>8</th>
+                    <th>6</th>
+                    <th>11</th>
+
+                </tr>
+
+
+
+
+                <tr class="groupa">
+                    <th class="el">Club Brugge</th>
+                    <th>6</th>
+                    <th>0</th>
+                    <th>3</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>12</th>
+                    <th>-8</th>
+                    <th>3</th>
+
+                </tr>
+
+
+
+
+                <tr class="groupa">
+
+                    <th class="ls">Galatasaray</th>
+                    <th>6</th>
+                    <th>0</th>
+                    <th>2</th>
+                    <th>4</th>
+                    <th>1</th>
+                    <th>14</th>
+                    <th>-13</th>
+                    <th>2</th>
+
+                </tr>
+            </table>
+            <button class="bt" id="buttona">▼</button>
+            <br><br>
+
+            <p>Group B</p>
+
+            <table>
+
+                <tr>
+                    <th>Clubs</th>
+                    <th>P</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>For</th>
+                    <th>AG</th>
+                    <th>Av</th>
+                    <th>Pt</th>
+                </tr>
+
+
+                <tr>
+                    <th class="cl">Bayern Munchen</th>
+                    <th>6</th>
+                    <th>6</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>24</th>
+                    <th>5</th>
+                    <th>19</th>
+                    <th>18</th>
+
+                </tr>
+                <tr>
+                    <th class="cl">Tottenham</th>
+                    <th>6</th>
+                    <th>3</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>18</th>
+                    <th>14</th>
+                    <th>4</th>
+                    <th>10</th>
+
+                </tr>
+
+
+
+
+                <tr class="groupb">
+                    <th class="el">Olympiacos</th>
+                    <th>6</th>
+                    <th>1</th>
+                    <th>1</th>
+                    <th>4</th>
+                    <th>8</th>
+                    <th>14</th>
+                    <th>-6</th>
+                    <th>4</th>
+
+                </tr>
+
+
+
+
+                <tr class="groupb">
+
+                    <th class="ls">Crvena Zvezda</th>
+                    <th>6</th>
+                    <th>1</th>
+                    <th>0</th>
+                    <th>5</th>
+                    <th>3</th>
+                    <th>20</th>
+                    <th>-17</th>
+                    <th>3</th>
+
+                </tr>
+            </table>
+            <button class="bt" id="buttonb">▼</button>
+
+            <br><br>
+
+            <p>Group C</p>
+
+            <table>
+
+                <tr>
+                    <th>Clubs</th>
+                    <th>P</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>For</th>
+                    <th>AG</th>
+                    <th>Av</th>
+                    <th>Pt</th>
+                </tr>
+
+
+                <tr>
+                    <th class="cl">M.City</th>
+                    <th>6</th>
+                    <th>4</th>
+                    <th>2</th>
+                    <th>0</th>
+                    <th>16</th>
+                    <th>4</th>
+                    <th>12</th>
+                    <th>14</th>
+
+                </tr>
+                <tr>
+                    <th class="cl">Atalanta BC</th>
+                    <th>6</th>
+                    <th>2</th>
+                    <th>1</th>
+                    <th>3</th>
+                    <th>8</th>
+                    <th>12</th>
+                    <th>-4</th>
+                    <th>7</th>
+
+                </tr>
+
+
+
+
+                <tr class="groupc">
+                    <th class="el">Shakhtar Donetsk</th>
+                    <th>6</th>
+                    <th>1</th>
+                    <th>3</th>
+                    <th>2</th>
+                    <th>8</th>
+                    <th>13</th>
+                    <th>-5</th>
+                    <th>6</th>
+
+                </tr>
+
+
+
+
+                <tr class="groupc">
+
+                    <th class="ls">Dinamo Zagreb</th>
+                    <th>6</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>10</th>
+                    <th>13</th>
+                    <th>-3</th>
+                    <th>5</th>
+
+                </tr>
+            </table>
+            <button class="bt" id="buttonc">▼</button>
+
+            <br><br>
+
+            <p>Group D</p>
+
+            <table>
+
+                <tr>
+                    <th>Clubs</th>
+                    <th>P</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>For</th>
+                    <th>AG</th>
+                    <th>Av</th>
+                    <th>Pt</th>
+                </tr>
+
+
+                <tr>
+                    <th class="cl">Juventus</th>
+                    <th>6</th>
+                    <th>5</th>
+                    <th>1</th>
+                    <th>0</th>
+                    <th>12</th>
+                    <th>4</th>
+                    <th>8</th>
+                    <th>16</th>
+
+                </tr>
+                <tr>
+                    <th class="cl">ATM</th>
+                    <th>6</th>
+                    <th>3</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>8</th>
+                    <th>5</th>
+                    <th>3</th>
+                    <th>10</th>
+
+                </tr>
+
+
+
+
+                <tr class="groupd">
+                    <th class="el">Bayer 04</th>
+                    <th>6</th>
+                    <th>2</th>
+                    <th>0</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>9</th>
+                    <th>-4</th>
+                    <th>6</th>
+
+                </tr>
+
+
+
+
+                <tr class="groupd">
+
+                    <th class="ls">Lokomotiv</th>
+                    <th>6</th>
+                    <th>1</th>
+                    <th>0</th>
+                    <th>5</th>
+                    <th>4</th>
+                    <th>11</th>
+                    <th>-7</th>
+                    <th>3</th>
+
+                </tr>
+            </table>
+            <button class="bt" id="buttond">▼</button>
+
+            <br><br>
+
+            <p>Group E</p>
+
+            <table>
+
+                <tr>
+                    <th>Clubs</th>
+                    <th>P</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>For</th>
+                    <th>AG</th>
+                    <th>Av</th>
+                    <th>Pt</th>
+                </tr>
+
+
+                <tr>
+                    <th class="cl">Liverpool</th>
+                    <th>6</th>
+                    <th>4</th>
+                    <th>1</th>
+                    <th>1</th>
+                    <th>13</th>
+                    <th>8</th>
+                    <th>5</th>
+                    <th>13</th>
+
+                </tr>
+                <tr>
+                    <th class="cl">Napoli</th>
+                    <th>6</th>
+                    <th>3</th>
+                    <th>3</th>
+                    <th>0</th>
+                    <th>11</th>
+                    <th>4</th>
+                    <th>7</th>
+                    <th>12</th>
+
+                </tr>
+
+
+
+
+                <tr class="groupe">
+                    <th class="el">Salzburg</th>
+                    <th>6</th>
+                    <th>2</th>
+                    <th>1</th>
+                    <th>3</th>
+                    <th>16</th>
+                    <th>13</th>
+                    <th>3</th>
+                    <th>7</th>
+
+                </tr>
+
+
+
+
+                <tr class="groupe">
+
+                    <th class="ls">Genk</th>
+                    <th>6</th>
+                    <th>0</th>
+                    <th>1</th>
+                    <th>5</th>
+                    <th>5</th>
+                    <th>20</th>
+                    <th>-15</th>
+                    <th>1</th>
+
+                </tr>
+            </table>
+            <button class="bt" id="buttone">▼</button>
+            <br><br>
+            <p>Group F</p>
+
+            <table>
+
+                <tr>
+                    <th>Clubs</th>
+                    <th>P</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>For</th>
+                    <th>AG</th>
+                    <th>Av</th>
+                    <th>Pt</th>
+                </tr>
+
+
+                <tr>
+                    <th class="cl">Barcelona</th>
+                    <th>6</th>
+                    <th>4</th>
+                    <th>2</th>
+                    <th>0</th>
+                    <th>9</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>14</th>
+
+                </tr>
+                <tr>
+                    <th class="cl">BVB</th>
+                    <th>6</th>
+                    <th>3</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>8</th>
+                    <th>8</th>
+                    <th>0</th>
+                    <th>10</th>
+
+                </tr>
+
+
+
+
+                <tr class="groupf">
+                    <th class="el">Inter</th>
+                    <th>6</th>
+                    <th>2</th>
+                    <th>1</th>
+                    <th>3</th>
+                    <th>10</th>
+                    <th>9</th>
+                    <th>1</th>
+                    <th>7</th>
+
+                </tr>
+
+
+
+
+                <tr class="groupf">
+
+                    <th class="ls">Slavia Praha</th>
+                    <th>6</th>
+                    <th>0</th>
+                    <th>2</th>
+                    <th>4</th>
+                    <th>4</th>
+                    <th>10</th>
+                    <th>-2</th>
+                    <th>6</th>
+
+                </tr>
+            </table>
+            <button class="bt" id="buttonf">▼</button>
+            <br><br>
+
+            <p>Group G</p>
+
+            <table>
+
+                <tr>
+                    <th>Clubs</th>
+                    <th>P</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>For</th>
+                    <th>AG</th>
+                    <th>Av</th>
+                    <th>Pt</th>
+                </tr>
+
+
+                <tr>
+                    <th class="cl">Leipzig</th>
+                    <th>6</th>
+                    <th>3</th>
+                    <th>2</th>
+                    <th>1</th>
+                    <th>10</th>
+                    <th>8</th>
+                    <th>2</th>
+                    <th>11</th>
+
+                </tr>
+                <tr>
+                    <th class="cl">OL</th>
+                    <th>6</th>
+                    <th>2</th>
+                    <th>2</th>
+                    <th>2</th>
+                    <th>9</th>
+                    <th>8</th>
+                    <th>1</th>
+                    <th>8</th>
+
+                </tr>
+
+
+
+
+                <tr class="groupg">
+                    <th class="el">Benfica</th>
+                    <th>6</th>
+                    <th>2</th>
+                    <th>1</th>
+                    <th>3</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>-1</th>
+                    <th>7</th>
+
+                </tr>
+
+
+
+
+                <tr class="groupg">
+
+                    <th class="ls">Zenit</th>
+                    <th>6</th>
+                    <th>2</th>
+                    <th>1</th>
+                    <th>3</th>
+                    <th>7</th>
+                    <th>9</th>
+                    <th>-2</th>
+                    <th>7</th>
+
+                </tr>
+            </table>
+            <button class="bt" id="buttong">▼</button>
+            <br><br>
+
+
+            <p>Group H</p>
+
+            <table>
+
+                <tr>
+                    <th>Clubs</th>
+                    <th>P</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>For</th>
+                    <th>AG</th>
+                    <th>Av</th>
+                    <th>Pt</th>
+                </tr>
+
+
+                <tr>
+                    <th class="cl">Valencia</th>
+                    <th>6</th>
+                    <th>3</th>
+                    <th>2</th>
+                    <th>1</th>
+                    <th>9</th>
+                    <th>7</th>
+                    <th>2</th>
+                    <th>11</th>
+
+                </tr>
+                <tr>
+                    <th class="cl">Chelsea</th>
+                    <th>6</th>
+                    <th>3</th>
+                    <th>2</th>
+                    <th>1</th>
+                    <th>11</th>
+                    <th>9</th>
+                    <th>2</th>
+                    <th>11</th>
+
+                </tr>
+
+
+
+
+                <tr class="grouph">
+                    <th class="el">AFC Ajax</th>
+                    <th>6</th>
+                    <th>3</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>12</th>
+                    <th>6</th>
+                    <th>6</th>
+                    <th>10</th>
+
+                </tr>
+
+
+
+
+                <tr class="grouph">
+
+                    <th class="ls">LOSC Lille</th>
+                    <th>6</th>
+                    <th>0</th>
+                    <th>1</th>
+                    <th>5</th>
+                    <th>4</th>
+                    <th>14</th>
+                    <th>-10</th>
+                    <th>1</th>
+
+                </tr>
+            </table>
+            <button class="bt" id="buttonh">▼</button>
+
+        </div>
+        <br><br><br>
+        <button class="btgb" onclick="openPage()">Go Back</button>
+        <div>
+            <p>Blue-Going to playoff</p>
+            <p>Green-Going to Europa League</p>
+            <p>Red-Eleminated</p>
+        </div>
+    </div>
+
+
+    <div id="Final" class="btdwn ">
+        <h2>Final</h2>
+        <div>
+            <br><br><br><br>
+            <h2> Quarter-finals</h2><br>
+            <p>Teams</p>
+            Borussia Dortmund (GER) / Paris Saint-Germain (FRA)<br> Atlético (ESP) / Liverpool (ENG)<br> Atalanta (ITA) / Valencia (ESP)<br> Tottenham Hotspur (ENG) / Leipzig (GER)<br> Chelsea (ENG) / Bayern München (GER)<br> Napoli (ITA) / Barcelona
+            (ESP)
+            <br> Real Madrid (ESP) / Manchester City (ENG)<br> Lyon (FRA) / Juventus (ITA)<br><br><br> There are no seedings or country protection: any restrictions will be announced ahead of the draw.<br><br>
+            <h2>Semi-finals</h2><br> There are no seedings or country protection: any restrictions will be announced ahead of the draw.<br><br>
+            <h2>Final</h2><br> A draw is made to determine the 'home' side in the final for administrative reasons.<br><br><br>
+            </h2>Match dates</h2><br><br> 7/8 April: Quarter-finals, first leg<br> 14/15 April: Quarter-finals, second leg<br> 28/29 April: Semi-finals, first leg<br> 5/6 May: Semi-finals, second leg<br> Saturday 30 May: Final – Istanbul<br><br><br> All
+            kick-offs will be 21:00 CET.<br>
+        </div>
+        <br>
+        <button class="btgb" onclick="openPage()">Go Back</button>
+    </div>
+
+
+
+    <div id="Hospitality" class="btdwn">
+        <h3>Hospitality</h3>
+        Enter your name: <br><input type="text" name="Name" value=""><br> Enter your guest code:<br> <input type="text" name="Code" value=" "><br>
+        <p>Guest of:</p>
+        <select>
+    <option>Select</option>
+    <option>Adidas</option>
+    <option>Sony</option>
+    <option>Nike</option>
+    <option>Nissan</option>
+    <option>Heineken</option>
+    <option>Broadcasters</option>
+    <option>Santander</option>
+    <option>Pepsico</option>
+    <option>Mastercard</option>
+    <option>Gazprom</option>
+  </select>
+        <br><br><br>
+        <input class="sbm" type="submit" value="Submit"><br><br>
+        <button class="btgb" onclick="openPage()">Go Back</button>
+    </div>
+
+
+    <div id="About" class="btdwn ">
+
+        <h3>About</h3>
+        <p class="abt"> © 1998-2019 UEFA. All rights reserved.<br> The UEFA word, the UEFA logo and all marks related to UEFA competitions, are protected by trademarks and/or copyright of UEFA. No use for commercial purposes may be made of such trademarks. Use of UEFA.com
+            signifies your agreement to the Terms and Conditions and Privacy Policy.</p>
+        <button class="btgb" onclick="openPage()">Go Back</button>
+
+    </div>
+    <script>
+        function openPage(pageName, elmnt, color) {
+            var i, btdwn, bt;
+            btdwn = document.getElementsByClassName("btdwn");
+            for (i = 0; i < btdwn.length; i++) {
+                btdwn[i].style.display = "none";
+            }
+            bt = document.getElementsByClassName("bt");
+            for (i = 0; i < bt.length; i++) {
+                bt[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+            window.history.back();
+        }
+
+
+        button = document.querySelector('.grpsall');
+        button.addEventListener('click', e => {
+                var id = e.target.id;
+
+                if (id == 'buttona') {
+
+
+                    document.getElementsByClassName('groupa')[0].style.display = 'table-row';
+                    document.getElementsByClassName('groupa')[1].style.display = 'table-row';
+                    document.getElementById('buttona').innerHTML = '▲';
+                    document.getElementById('buttona').id = 'clickbuttona';
+
+                } else if (id = 'clickbuttona') {
+
+                    document.getElementsByClassName('groupa')[0].style.display = 'none';
+                    document.getElementsByClassName('groupa')[1].style.display = 'none';
+                    document.getElementById('clickbuttona').id = 'buttona';
+                    document.getElementById('buttona').innerHTML = '▼';
+
+
+
+
+                }
+            })
+            //------------------------------------------------
+        button = document.querySelector('.grpsall');
+        button.addEventListener('click', e => {
+                var id = e.target.id;
+
+                if (id == 'buttonb') {
+
+
+                    document.getElementsByClassName('groupb')[0].style.display = 'table-row';
+                    document.getElementsByClassName('groupb')[1].style.display = 'table-row';
+                    document.getElementById('buttonb').innerHTML = '▲';
+                    document.getElementById('buttonb').id = 'clickbuttonb';
+
+                } else if (id = 'clickbuttonb') {
+
+                    document.getElementsByClassName('groupb')[0].style.display = 'none';
+                    document.getElementsByClassName('groupb')[1].style.display = 'none';
+                    document.getElementById('clickbuttonb').id = 'buttonb';
+                    document.getElementById('buttonb').innerHTML = '▼';
+
+
+
+
+                }
+            })
+            //-------------------------------------------------------------------
+
+
+
+
+        //------------------------------------------------
+        button = document.querySelector('.grpsall');
+        button.addEventListener('click', e => {
+                var id = e.target.id;
+
+                if (id == 'buttonc') {
+
+
+                    document.getElementsByClassName('groupc')[0].style.display = 'table-row';
+                    document.getElementsByClassName('groupc')[1].style.display = 'table-row';
+                    document.getElementById('buttonc').innerHTML = '▲';
+                    document.getElementById('buttonc').id = 'clickbuttonc';
+
+                } else if (id = 'clickbuttonc') {
+
+                    document.getElementsByClassName('groupc')[0].style.display = 'none';
+                    document.getElementsByClassName('groupc')[1].style.display = 'none';
+                    document.getElementById('clickbuttonc').id = 'buttonc';
+                    document.getElementById('buttonc').innerHTML = '▼';
+
+
+
+
+                }
+            })
+            //----------------------------------------------------------------------
+
+
+
+        button = document.querySelector('.grpsall');
+        button.addEventListener('click', e => {
+                var id = e.target.id;
+
+                if (id == 'buttond') {
+
+
+                    document.getElementsByClassName('groupd')[0].style.display = 'table-row';
+                    document.getElementsByClassName('groupd')[1].style.display = 'table-row';
+                    document.getElementById('buttond').innerHTML = '▲';
+                    document.getElementById('buttond').id = 'clickbuttond';
+
+                } else if (id = 'clickbuttond') {
+
+                    document.getElementsByClassName('groupd')[0].style.display = 'none';
+                    document.getElementsByClassName('groupd')[1].style.display = 'none';
+                    document.getElementById('clickbuttond').id = 'buttond';
+                    document.getElementById('buttond').innerHTML = '▼';
+
+
+
+
+                }
+            })
+            //------------------------------------------------
+
+        //-----------------------------------------------------------------
+
+        //------------------------------------------------
+        button = document.querySelector('.grpsall');
+        button.addEventListener('click', e => {
+            var id = e.target.id;
+
+            if (id == 'buttone') {
+
+
+                document.getElementsByClassName('groupe')[0].style.display = 'table-row';
+                document.getElementsByClassName('groupe')[1].style.display = 'table-row';
+                document.getElementById('buttone').innerHTML = '▲';
+                document.getElementById('buttone').id = 'clickbuttone';
+
+            } else if (id = 'clickbuttone') {
+
+                document.getElementsByClassName('groupe')[0].style.display = 'none';
+                document.getElementsByClassName('groupe')[1].style.display = 'none';
+                document.getElementById('clickbuttone').id = 'buttone';
+                document.getElementById('buttone').innerHTML = '▼';
+
+
+
+
+            }
+        })
+
+        //-------------------------------------------------------
+
+
+
+        //------------------------------------------------
+        button = document.querySelector('.grpsall');
+        button.addEventListener('click', e => {
+            var id = e.target.id;
+
+            if (id == 'buttonf') {
+
+
+                document.getElementsByClassName('groupf')[0].style.display = 'table-row';
+                document.getElementsByClassName('groupf')[1].style.display = 'table-row';
+                document.getElementById('buttonf').innerHTML = '▲';
+                document.getElementById('buttonf').id = 'clickbuttonf';
+
+            } else if (id = 'clickbuttonf') {
+
+                document.getElementsByClassName('groupf')[0].style.display = 'none';
+                document.getElementsByClassName('groupf')[1].style.display = 'none';
+                document.getElementById('clickbuttonf').id = 'buttonf';
+                document.getElementById('buttonf').innerHTML = '▼';
+
+
+
+
+            }
+        })
+
+
+        //-----------------------------------------
+
+
+
+        //------------------------------------------------
+        button = document.querySelector('.grpsall');
+        button.addEventListener('click', e => {
+                var id = e.target.id;
+
+                if (id == 'buttong') {
+
+
+                    document.getElementsByClassName('groupg')[0].style.display = 'table-row';
+                    document.getElementsByClassName('groupg')[1].style.display = 'table-row';
+                    document.getElementById('buttong').innerHTML = '▲';
+                    document.getElementById('buttong').id = 'clickbuttong';
+
+                } else if (id = 'clickbuttong') {
+
+                    document.getElementsByClassName('groupg')[0].style.display = 'none';
+                    document.getElementsByClassName('groupg')[1].style.display = 'none';
+                    document.getElementById('clickbuttong').id = 'buttong';
+                    document.getElementById('buttong').innerHTML = '▼';
+
+
+
+
+                }
+            })
+            //-----------------------------------------------------
+
+        button = document.querySelector('.grpsall');
+        button.addEventListener('click', e => {
+            var id = e.target.id;
+
+            if (id == 'buttonh') {
+
+
+                document.getElementsByClassName('grouph')[0].style.display = 'table-row';
+                document.getElementsByClassName('grouph')[1].style.display = 'table-row';
+                document.getElementById('buttonh').innerHTML = '▲';
+                document.getElementById('buttonh').id = 'clickbuttonh';
+
+            } else if (id = 'clickbuttonh') {
+
+                document.getElementsByClassName('grouph')[0].style.display = 'none';
+                document.getElementsByClassName('grouph')[1].style.display = 'none';
+                document.getElementById('clickbuttonh').id = 'buttonh';
+                document.getElementById('buttonh').innerHTML = '▼';
+
+
+
+
+            }
+        })
+
+
+        //------------------------------------------------
+
+
+        // Get the element with id="defaultOpen" and click on it
+        //document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+
+</html>
